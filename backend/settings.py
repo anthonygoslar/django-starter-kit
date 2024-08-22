@@ -59,6 +59,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # local apps
+    "apps.app_common",
+    "apps.app_profiles",
+    "apps.app_users",
+    # 3rd party apps
     'django_celery_beat',
     'celery',
     'django_elasticsearch_dsl',
@@ -68,6 +73,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'silk',
     'channels',
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [
